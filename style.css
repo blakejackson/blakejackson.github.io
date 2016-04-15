@@ -1,1 +1,37 @@
+#graph_table {
+    width: 500px;
+	height: 200px;
+	table-layout: fixed;
+}
+
+#graph_table td {
+    width: 50px;
+    height: 50px;
+}
+
+#graph_table .node {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 100%;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    transition: all 0.5s ease;
+}
+
+#graph_table .selected {
+    width: 90px;
+    height: 90px;
+    background-color: orange;
+    transition: all 0.5s ease;
+}
+
+#graph_table .parent {
+    background-color: red;
+}
+
+#graph_table .child{
+    background-color: green;
+}
 
