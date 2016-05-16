@@ -313,7 +313,7 @@ var workflow_viewer_display = (function(graph_data) {
 		        $.each(children, function(index, child) {
 		            $("#" + child).addClass("highlight");
 		        });
-		        $("#" + output_id).addClass("highlight");
+		        $(this).addClass("highlight");
 		    });
 		};
 	
