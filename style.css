@@ -1,23 +1,28 @@
 #graph_table {
-    width: 500px;
-	height: 200px;
-	table-layout: fixed;
+    table-layout: fixed;
+    margin-bottom: 250px;
 }
 
 #graph_table td {
-    width: 50px;
-    height: 50px;
+    vertical-align: top;
 }
 
-#graph_table .node {
+.node {
     width: 40px;
     height: 40px;
     background-color: #ccc;
     border-radius: 100%;
-    text-align: center;
     color: white;
     margin: 0 auto;
     transition: all 0.5s ease;
+}
+
+.node_label {
+    text-align: center;
+    word-wrap: break-word;
+    font-family: "Arial";
+    max-width: 100px;
+    display: none;
 }
 
 #graph_table .selected {
@@ -35,3 +40,25 @@
     background-color: green;
 }
 
+#information_panel {
+    width: 100%;
+    height: 200px;
+    border-top: 1px solid black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    overflow: scroll;
+}
+
+#information_panel_label {
+    font-weight: bold;
+}
+
+#input_output_table td {
+    vertical-align: top;
+}
+
+.highlight {
+    background-color: blue !important;
+}
