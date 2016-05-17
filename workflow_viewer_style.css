@@ -1,13 +1,13 @@
-#graph_table {
+#workflow_viewer_wrapper #graph_table {
     table-layout: fixed;
     margin-bottom: 250px;
 }
 
-#graph_table td {
+#workflow_viewer_wrapper #graph_table td {
     vertical-align: top;
 }
 
-.node {
+#workflow_viewer_wrapper .node {
     width: 40px;
     height: 40px;
     background-color: #ccc;
@@ -17,7 +17,7 @@
     transition: all 0.5s ease;
 }
 
-.node_label {
+#workflow_viewer_wrapper .node_label {
     text-align: center;
     word-wrap: break-word;
     font-family: "Arial";
@@ -25,22 +25,22 @@
     display: none;
 }
 
-#graph_table .selected {
+#workflow_viewer_wrapper #graph_table .selected {
     width: 90px;
     height: 90px;
     background-color: orange;
     transition: all 0.5s ease;
 }
 
-#graph_table .parent {
+#workflow_viewer_wrapper #graph_table .parent {
     background-color: red;
 }
 
-#graph_table .child{
+#workflow_viewer_wrapper #graph_table .child{
     background-color: green;
 }
 
-#information_panel {
+#workflow_viewer_wrapper #information_panel {
     width: 100%;
     height: 200px;
     border-top: 1px solid black;
@@ -51,14 +51,14 @@
     overflow: scroll;
 }
 
-#information_panel_label {
+#workflow_viewer_wrapper #information_panel_label {
     font-weight: bold;
 }
 
-#input_output_table td {
+#workflow_viewer_wrapper #input_output_table td {
     vertical-align: top;
 }
 
-.highlight {
+#workflow_viewer_wrapper .highlight {
     background-color: blue !important;
 }

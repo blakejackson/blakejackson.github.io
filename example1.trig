@@ -1,0 +1,946 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix niiri: <http://iri.nidash.org/> .
+@prefix nipype: <http://nipy.org/nipype/terms/> .
+@prefix ns1: <http://iri.nidash.org/6> .
+@prefix ns2: <http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:a6880fa08d011e69cd0985aeb8aa27e {
+    <http://iri.nidash.org/6712995c08d011e69ca3985aeb8aa27e> a nipype:Inputs,
+            prov:Collection,
+            prov:Entity ;
+        rdfs:label "Inputs"^^xsd:string ;
+        prov:hadMember <http://iri.nidash.org/214dcfa8a897fcb61c990d4b9309f0ab>,
+            <http://iri.nidash.org/4dbeb62cc96d5952d4c2e4ca01c3497e>,
+            <http://iri.nidash.org/51acba0392b8e39e8fe31885c680431a>,
+            <http://iri.nidash.org/9ec227a6f740d9ba54614c67f6f65e89>,
+            niiri:af374650694ce9f49a897abcc556901d,
+            niiri:e5692843450c8e664dfe4b40a35647de .
+
+    <http://iri.nidash.org/6715c36808d011e68fb8985aeb8aa27e> a nipype:Outputs,
+            prov:Collection,
+            prov:Entity ;
+        rdfs:label "Outputs"^^xsd:string ;
+        prov:hadMember <http://iri.nidash.org/27d907e7640cc9de6ab7585694cc1fbd>,
+            niiri:eef241389b7f626a950e3a5b6842d12e ;
+        prov:wasGeneratedBy <http://iri.nidash.org/6710ce0708d011e6a9de985aeb8aa27e> .
+
+    <http://iri.nidash.org/6716be9c08d011e6817f985aeb8aa27e> a nipype:Runtime,
+            prov:Collection,
+            prov:Entity ;
+        rdfs:label "RuntimeInfo"^^xsd:string ;
+        prov:wasGeneratedBy <http://iri.nidash.org/6710ce0708d011e6a9de985aeb8aa27e> .
+
+    <http://iri.nidash.org/0312ee5fba61208f0d2f8e48604910b8> a prov:Agent,
+            prov:SoftwareAgent ;
+        rdfs:label "Nipype"^^xsd:string ;
+        nipype:commit_hash "9121042"^^xsd:string ;
+        nipype:commit_source "repository"^^xsd:string ;
+        nipype:networkx_version "1.10"^^xsd:string ;
+        nipype:nibabel_version "2.1.0dev"^^xsd:string ;
+        nipype:numpy_version "1.10.2"^^xsd:string ;
+        nipype:pkg_path "file://warpspeed.local/software/nipy-repo/nipype/nipype"^^xsd:anyURI ;
+        nipype:scipy_version "0.16.1"^^xsd:string ;
+        nipype:sys_executable "file://warpspeed.local/software/anaconda/envs/devpype/bin/python"^^xsd:anyURI ;
+        nipype:sys_platform "darwin"^^xsd:string ;
+        nipype:sys_version """2.7.11 |Continuum Analytics, Inc.| (default, Dec  6 2015, 18:57:58) 
+[GCC 4.2.1 (Apple Inc. build 5577)]"""^^xsd:string ;
+        nipype:traits_version "4.5.0"^^xsd:string ;
+        nipype:version "0.12.0-rc1"^^xsd:string ;
+        foaf:name "Nipype"^^xsd:string .
+
+    <http://iri.nidash.org/2031064d0b0f55f84f94b9908a2120a1> a prov:Entity ;
+        rdfs:label "FREESURFER_HOME"^^xsd:string ;
+        nipype:environmentVariable "FREESURFER_HOME"^^xsd:string ;
+        prov:value "file://warpspeed.local/Applications/freesurfer"^^xsd:anyURI .
+
+    <http://iri.nidash.org/27049d020570766684c9da05f63a7a05> a prov:Entity ;
+        rdfs:label "OMP_NUM_THREADS"^^xsd:string ;
+        nipype:environmentVariable "OMP_NUM_THREADS"^^xsd:string ;
+        prov:value "4"^^xsd:string .
+
+    <http://iri.nidash.org/27d907e7640cc9de6ab7585694cc1fbd> a prov:Entity ;
+        ns2:sha512 "6e74de2e9732755203eb26a30f1903b8506b8c5c44188dc1bd9621762b08a7c41f731c3aa3ea55639a944979d13502c10cfffd84a87f5a021acd7a4411c5d955"^^xsd:string ;
+        prov:atLocation "file://warpspeed.local/software/temp/share_blake/test_prov2/better/mprage003_brain_mask.nii.gz"^^xsd:anyURI ;
+        prov:qualifiedGeneration [ a prov:Generation ;
+                rdfs:label "mask_file"^^xsd:string ;
+                nipype:outPort "mask_file"^^xsd:string ;
+                prov:activity <http://iri.nidash.org/6710ce0708d011e6a9de985aeb8aa27e> ] ;
+        prov:value "file://warpspeed.local/software/temp/share_blake/test_prov2/better/mprage003_brain_mask.nii.gz"^^xsd:anyURI .
+
+    <http://iri.nidash.org/33b6d5c8661fae8105af219cb532d248> a prov:Entity ;
+        rdfs:label "ANTSPATH"^^xsd:string ;
+        nipype:environmentVariable "ANTSPATH"^^xsd:string ;
+        prov:value "file://warpspeed.local/software/ANTSbin/140117/"^^xsd:anyURI .
+
+    <http://iri.nidash.org/3cf3d1829fc4723c2ec1242d70180cf1> a prov:Agent,
+            prov:Person ;
+        rdfs:label "satra"^^xsd:string ;
+        foaf:name "satra"^^xsd:string .
+
+    <http://iri.nidash.org/3f1b0f3672391153b26450f7bccbd51c> a prov:Entity ;
+        rdfs:label "PATH"^^xsd:string ;
+        nipype:environmentVariable "PATH"^^xsd:string ;
+        prov:value "/software/anaconda/envs/devpype/bin:/usr/local/var/rbenv/shims:/software/fsl/5.0.9/fsl/bin:/usr/local/cuda/bin:/software/ANTSbin/140117/:/software/camino/bin:/Users/satra/local/bin:/software/AFNI/:/Applications/freesurfer/bin:/Applications/freesurfer/fsfast/bin:/Applications/freesurfer/tktools:/Applications/freesurfer/bin/freeview.app/Contents/MacOS/:/Applications/freesurfer/mni/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/deployd/bin:/usr/local/git/bin:/usr/local/go/bin:/usr/local/MacGPG2/bin:/Library/TeX/texbin:/Applications/Muse"^^xsd:string .
+
+    <http://iri.nidash.org/5e668e002569596c6bf6a0816425a171> a prov:Entity ;
+        rdfs:label "LOGNAME"^^xsd:string ;
+        nipype:environmentVariable "LOGNAME"^^xsd:string ;
+        prov:value "satra"^^xsd:string .
+
+    <http://iri.nidash.org/6711bdfd08d011e682db985aeb8aa27e> a nipype:Environment,
+            prov:Collection,
+            prov:Entity ;
+        rdfs:label "Environment"^^xsd:string ;
+        prov:hadMember <http://iri.nidash.org/2031064d0b0f55f84f94b9908a2120a1>,
+            <http://iri.nidash.org/27049d020570766684c9da05f63a7a05>,
+            <http://iri.nidash.org/33b6d5c8661fae8105af219cb532d248>,
+            <http://iri.nidash.org/3f1b0f3672391153b26450f7bccbd51c>,
+            <http://iri.nidash.org/5e668e002569596c6bf6a0816425a171>,
+            <http://iri.nidash.org/711a35fa07d8b584aa1a559ce0b3d45d>,
+            <http://iri.nidash.org/9508e8294e6bdf133d2e3d4120420b03>,
+            niiri:c715ef2fc65d4542b485556d5563d542,
+            niiri:dc612dc65c679b0f7b4d670284aa1e38,
+            niiri:e5a45c892f8a88d577f69b9924fe61cd,
+            niiri:e633a4c11edc4eacbb7d286b784cd210,
+            niiri:e9043b8eb1c79307c36a6043f93060a1,
+            niiri:ec73b0bc66f90b90ebbb20609019da77,
+            niiri:f5eb8c89728d98b1a32358014a32b4e0 .
+
+    <http://iri.nidash.org/711a35fa07d8b584aa1a559ce0b3d45d> a prov:Entity ;
+        rdfs:label "USER"^^xsd:string ;
+        nipype:environmentVariable "USER"^^xsd:string ;
+        prov:value "satra"^^xsd:string .
+
+    <http://iri.nidash.org/9508e8294e6bdf133d2e3d4120420b03> a prov:Entity ;
+        rdfs:label "DYLD_LIBRARY_PATH"^^xsd:string ;
+        nipype:environmentVariable "DYLD_LIBRARY_PATH"^^xsd:string ;
+        prov:value "/usr/local/cuda/lib:"^^xsd:string .
+
+    niiri:c715ef2fc65d4542b485556d5563d542 a prov:Entity ;
+        rdfs:label "FSLDIR"^^xsd:string ;
+        nipype:environmentVariable "FSLDIR"^^xsd:string ;
+        prov:value "file://warpspeed.local/software/fsl/5.0.9/fsl"^^xsd:anyURI .
+
+    niiri:dc612dc65c679b0f7b4d670284aa1e38 a prov:Entity ;
+        rdfs:label "CAMINOPATH"^^xsd:string ;
+        nipype:environmentVariable "CAMINOPATH"^^xsd:string ;
+        prov:value "file://warpspeed.local/software/camino/bin"^^xsd:anyURI .
+
+    niiri:e5a45c892f8a88d577f69b9924fe61cd a prov:Entity ;
+        rdfs:label "FSF_OUTPUT_FORMAT"^^xsd:string ;
+        nipype:environmentVariable "FSF_OUTPUT_FORMAT"^^xsd:string ;
+        prov:value "nii.gz"^^xsd:string .
+
+    niiri:e633a4c11edc4eacbb7d286b784cd210 a prov:Entity ;
+        rdfs:label "FSLOUTPUTTYPE"^^xsd:string ;
+        nipype:environmentVariable "FSLOUTPUTTYPE"^^xsd:string ;
+        prov:value "NIFTI_GZ"^^xsd:string .
+
+    niiri:e9043b8eb1c79307c36a6043f93060a1 a prov:Entity ;
+        rdfs:label "MKL_NUM_THREADS"^^xsd:string ;
+        nipype:environmentVariable "MKL_NUM_THREADS"^^xsd:string ;
+        prov:value "4"^^xsd:string .
+
+    niiri:ec73b0bc66f90b90ebbb20609019da77 a prov:Entity ;
+        rdfs:label "CLASSPATH"^^xsd:string ;
+        nipype:environmentVariable "CLASSPATH"^^xsd:string ;
+        prov:value "/Users/satra/local/jar/MINE.jar:/Users/satra/local/jar/commons-io-2.3.jar"^^xsd:string .
+
+    niiri:eef241389b7f626a950e3a5b6842d12e a prov:Entity ;
+        ns2:sha512 "5113a909219308c750c7fa1decab4f07abe97abe00595442a57c0114cd81d7f5715f2538bdc9e021e67db5250612ad925304d2d590585c4661c7469f607ca374"^^xsd:string ;
+        prov:atLocation "file://warpspeed.local/software/temp/share_blake/test_prov2/better/mprage003_brain.nii.gz"^^xsd:anyURI ;
+        prov:qualifiedGeneration [ a prov:Generation ;
+                rdfs:label "out_file"^^xsd:string ;
+                nipype:outPort "out_file"^^xsd:string ;
+                prov:activity <http://iri.nidash.org/6710ce0708d011e6a9de985aeb8aa27e> ] ;
+        prov:value "file://warpspeed.local/software/temp/share_blake/test_prov2/better/mprage003_brain.nii.gz"^^xsd:anyURI .
+
+    niiri:f5eb8c89728d98b1a32358014a32b4e0 a prov:Entity ;
+        rdfs:label "FIX_VERTEX_AREA"^^xsd:string ;
+        nipype:environmentVariable "FIX_VERTEX_AREA"^^xsd:string ;
+        prov:value ""^^xsd:string .
+
+    <http://iri.nidash.org/214dcfa8a897fcb61c990d4b9309f0ab> a prov:Entity ;
+        ns2:sha512 "17e21554d84af8a08431d53024fd654359405e74659c2c9d78f7a16f60ef467b7de71ea32dccf742675616cf82f30098e757983e11f4ed32bada067acca4acea"^^xsd:string ;
+        prov:atLocation "file://warpspeed.local/software/temp/share_blake/mprage003.nii.gz"^^xsd:anyURI ;
+        prov:value "file://warpspeed.local/software/temp/share_blake/mprage003.nii.gz"^^xsd:anyURI .
+
+    <http://iri.nidash.org/4dbeb62cc96d5952d4c2e4ca01c3497e> a prov:Entity ;
+        prov:value "stream"^^xsd:string .
+
+    <http://iri.nidash.org/51acba0392b8e39e8fe31885c680431a> a prov:Entity ;
+        prov:value "NIFTI_GZ"^^xsd:string .
+
+    <http://iri.nidash.org/9ec227a6f740d9ba54614c67f6f65e89> a prov:Entity ;
+        prov:value 0 .
+
+    niiri:af374650694ce9f49a897abcc556901d a prov:Entity ;
+        prov:value "{\"FSLOUTPUTTYPE\": \"NIFTI_GZ\"}"^^xsd:string .
+
+    niiri:e5692843450c8e664dfe4b40a35647de a prov:Entity ;
+        prov:value 1 .
+
+    <http://iri.nidash.org/6710ce0708d011e6a9de985aeb8aa27e> a nipype:NipypeInterfacesFslPreprocessBet,
+            prov:Activity ;
+        rdfs:label "BET"^^xsd:string ;
+        nipype:command "bet /software/temp/share_blake/mprage003.nii.gz /software/temp/share_blake/test_prov2/better/mprage003_brain.nii.gz -m"^^xsd:string ;
+        nipype:commandPath "file://warpspeed.local/software/fsl/5.0.9/fsl/bin/bet"^^xsd:anyURI ;
+        nipype:dependencies "/software/fsl/5.0.9/fsl/bin/bet: is not an object file"^^xsd:string ;
+        nipype:duration "11.46836"^^xsd:float ;
+        nipype:interface "BET"^^xsd:string ;
+        nipype:module "nipype.interfaces.fsl.preprocess"^^xsd:string ;
+        nipype:platform "Darwin-15.4.0-x86_64-i386-64bit"^^xsd:string ;
+        nipype:returnCode 0 ;
+        nipype:version "5.0.9"^^xsd:string ;
+        nipype:workingDirectory "file://warpspeed.local/software/temp/share_blake/test_prov2/better"^^xsd:anyURI ;
+        prov:endTime "2016-04-22T21:23:05.671345"^^xsd:dateTime ;
+        prov:qualifiedAssociation [ a prov:Association ;
+                prov:hadRole nipype:LoggedInUser ] ;
+        prov:qualifiedUsage [ a prov:Usage ;
+                rdfs:label "output_type"^^xsd:string ;
+                nipype:inPort "output_type"^^xsd:string ;
+                prov:entity <http://iri.nidash.org/51acba0392b8e39e8fe31885c680431a> ],
+            [ a prov:Usage ;
+                rdfs:label "ignore_exception"^^xsd:string ;
+                nipype:inPort "ignore_exception"^^xsd:string ;
+                prov:entity <http://iri.nidash.org/9ec227a6f740d9ba54614c67f6f65e89> ],
+            [ a prov:Usage ;
+                rdfs:label "terminal_output"^^xsd:string ;
+                nipype:inPort "terminal_output"^^xsd:string ;
+                prov:entity <http://iri.nidash.org/4dbeb62cc96d5952d4c2e4ca01c3497e> ],
+            [ a prov:Usage ;
+                rdfs:label "in_file"^^xsd:string ;
+                nipype:inPort "in_file"^^xsd:string ;
+                prov:entity <http://iri.nidash.org/214dcfa8a897fcb61c990d4b9309f0ab> ],
+            [ a prov:Usage ;
+                rdfs:label "mask"^^xsd:string ;
+                nipype:inPort "mask"^^xsd:string ;
+                prov:entity niiri:e5692843450c8e664dfe4b40a35647de ],
+            [ a prov:Usage ;
+                rdfs:label "environ"^^xsd:string ;
+                nipype:inPort "environ"^^xsd:string ;
+                prov:entity niiri:af374650694ce9f49a897abcc556901d ] ;
+        prov:startTime "2016-04-22T21:22:59.124509"^^xsd:dateTime ;
+        prov:used <http://iri.nidash.org/6711bdfd08d011e682db985aeb8aa27e> ;
+        prov:wasAssociatedWith <http://iri.nidash.org/0312ee5fba61208f0d2f8e48604910b8>,
+            <http://iri.nidash.org/3cf3d1829fc4723c2ec1242d70180cf1> ;
+        foaf:host "warpspeed.local"^^xsd:anyURI .
+}
+
+ns1:a61cdc708d011e6a28a985aeb8aa27e {
+    <http://iri.nidash.org/68ac115908d011e6921f985aeb8aa27e> a nipype:Inputs,
+            prov:Collection,
+            prov:Entity ;
+        rdfs:label "Inputs"^^xsd:string ;
+        prov:hadMember <http://iri.nidash.org/4645f42696b3ea98ab0d6197a15c7dc8>,
+            <http://iri.nidash.org/4dbeb62cc96d5952d4c2e4ca01c3497e>,
+            <http://iri.nidash.org/51acba0392b8e39e8fe31885c680431a>,
+            <http://iri.nidash.org/9ec227a6f740d9ba54614c67f6f65e89>,
+            niiri:af374650694ce9f49a897abcc556901d,
+            niiri:eef241389b7f626a950e3a5b6842d12e .
+
+    <http://iri.nidash.org/68ad02ae08d011e6bc62985aeb8aa27e> a nipype:Outputs,
+            prov:Collection,
+            prov:Entity ;
+        rdfs:label "Outputs"^^xsd:string ;
+        prov:hadMember <http://iri.nidash.org/7cf17ce9870ed0c011594e372052d142> ;
+        prov:wasGeneratedBy <http://iri.nidash.org/68ab4b1108d011e68f4c985aeb8aa27e> .
+
+    <http://iri.nidash.org/68add92b08d011e69ae3985aeb8aa27e> a nipype:Runtime,
+            prov:Collection,
+            prov:Entity ;
+        rdfs:label "RuntimeInfo"^^xsd:string ;
+        prov:wasGeneratedBy <http://iri.nidash.org/68ab4b1108d011e68f4c985aeb8aa27e> .
+
+    <http://iri.nidash.org/0312ee5fba61208f0d2f8e48604910b8> a prov:Agent,
+            prov:SoftwareAgent ;
+        rdfs:label "Nipype"^^xsd:string ;
+        nipype:commit_hash "9121042"^^xsd:string ;
+        nipype:commit_source "repository"^^xsd:string ;
+        nipype:networkx_version "1.10"^^xsd:string ;
+        nipype:nibabel_version "2.1.0dev"^^xsd:string ;
+        nipype:numpy_version "1.10.2"^^xsd:string ;
+        nipype:pkg_path "file://warpspeed.local/software/nipy-repo/nipype/nipype"^^xsd:anyURI ;
+        nipype:scipy_version "0.16.1"^^xsd:string ;
+        nipype:sys_executable "file://warpspeed.local/software/anaconda/envs/devpype/bin/python"^^xsd:anyURI ;
+        nipype:sys_platform "darwin"^^xsd:string ;
+        nipype:sys_version """2.7.11 |Continuum Analytics, Inc.| (default, Dec  6 2015, 18:57:58) 
+[GCC 4.2.1 (Apple Inc. build 5577)]"""^^xsd:string ;
+        nipype:traits_version "4.5.0"^^xsd:string ;
+        nipype:version "0.12.0-rc1"^^xsd:string ;
+        foaf:name "Nipype"^^xsd:string .
+
+    <http://iri.nidash.org/2031064d0b0f55f84f94b9908a2120a1> a prov:Entity ;
+        rdfs:label "FREESURFER_HOME"^^xsd:string ;
+        nipype:environmentVariable "FREESURFER_HOME"^^xsd:string ;
+        prov:value "file://warpspeed.local/Applications/freesurfer"^^xsd:anyURI .
+
+    <http://iri.nidash.org/27049d020570766684c9da05f63a7a05> a prov:Entity ;
+        rdfs:label "OMP_NUM_THREADS"^^xsd:string ;
+        nipype:environmentVariable "OMP_NUM_THREADS"^^xsd:string ;
+        prov:value "4"^^xsd:string .
+
+    <http://iri.nidash.org/33b6d5c8661fae8105af219cb532d248> a prov:Entity ;
+        rdfs:label "ANTSPATH"^^xsd:string ;
+        nipype:environmentVariable "ANTSPATH"^^xsd:string ;
+        prov:value "file://warpspeed.local/software/ANTSbin/140117/"^^xsd:anyURI .
+
+    <http://iri.nidash.org/3cf3d1829fc4723c2ec1242d70180cf1> a prov:Agent,
+            prov:Person ;
+        rdfs:label "satra"^^xsd:string ;
+        foaf:name "satra"^^xsd:string .
+
+    <http://iri.nidash.org/3f1b0f3672391153b26450f7bccbd51c> a prov:Entity ;
+        rdfs:label "PATH"^^xsd:string ;
+        nipype:environmentVariable "PATH"^^xsd:string ;
+        prov:value "/software/anaconda/envs/devpype/bin:/usr/local/var/rbenv/shims:/software/fsl/5.0.9/fsl/bin:/usr/local/cuda/bin:/software/ANTSbin/140117/:/software/camino/bin:/Users/satra/local/bin:/software/AFNI/:/Applications/freesurfer/bin:/Applications/freesurfer/fsfast/bin:/Applications/freesurfer/tktools:/Applications/freesurfer/bin/freeview.app/Contents/MacOS/:/Applications/freesurfer/mni/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/deployd/bin:/usr/local/git/bin:/usr/local/go/bin:/usr/local/MacGPG2/bin:/Library/TeX/texbin:/Applications/Muse"^^xsd:string .
+
+    <http://iri.nidash.org/5e668e002569596c6bf6a0816425a171> a prov:Entity ;
+        rdfs:label "LOGNAME"^^xsd:string ;
+        nipype:environmentVariable "LOGNAME"^^xsd:string ;
+        prov:value "satra"^^xsd:string .
+
+    <http://iri.nidash.org/68ab5f2608d011e6a955985aeb8aa27e> a nipype:Environment,
+            prov:Collection,
+            prov:Entity ;
+        rdfs:label "Environment"^^xsd:string ;
+        prov:hadMember <http://iri.nidash.org/2031064d0b0f55f84f94b9908a2120a1>,
+            <http://iri.nidash.org/27049d020570766684c9da05f63a7a05>,
+            <http://iri.nidash.org/33b6d5c8661fae8105af219cb532d248>,
+            <http://iri.nidash.org/3f1b0f3672391153b26450f7bccbd51c>,
+            <http://iri.nidash.org/5e668e002569596c6bf6a0816425a171>,
+            <http://iri.nidash.org/711a35fa07d8b584aa1a559ce0b3d45d>,
+            <http://iri.nidash.org/9508e8294e6bdf133d2e3d4120420b03>,
+            niiri:c715ef2fc65d4542b485556d5563d542,
+            niiri:dc612dc65c679b0f7b4d670284aa1e38,
+            niiri:e5a45c892f8a88d577f69b9924fe61cd,
+            niiri:e633a4c11edc4eacbb7d286b784cd210,
+            niiri:e9043b8eb1c79307c36a6043f93060a1,
+            niiri:ec73b0bc66f90b90ebbb20609019da77,
+            niiri:f5eb8c89728d98b1a32358014a32b4e0 .
+
+    <http://iri.nidash.org/711a35fa07d8b584aa1a559ce0b3d45d> a prov:Entity ;
+        rdfs:label "USER"^^xsd:string ;
+        nipype:environmentVariable "USER"^^xsd:string ;
+        prov:value "satra"^^xsd:string .
+
+    <http://iri.nidash.org/7cf17ce9870ed0c011594e372052d142> a prov:Entity ;
+        ns2:sha512 "bee2987a89e0cfbc193261e563ca8f7f4066f04ed3053d44a0f2f8a53a527164238a1d3a3b786573ea13287052d2d275696af1e518c4b8b8af42d7100a5b9162"^^xsd:string ;
+        prov:atLocation "file://warpspeed.local/software/temp/share_blake/test_prov2/maths1/mprage003_brain_maths.nii.gz"^^xsd:anyURI ;
+        prov:qualifiedGeneration [ a prov:Generation ;
+                rdfs:label "out_file"^^xsd:string ;
+                nipype:outPort "out_file"^^xsd:string ;
+                prov:activity <http://iri.nidash.org/68ab4b1108d011e68f4c985aeb8aa27e> ] ;
+        prov:value "file://warpspeed.local/software/temp/share_blake/test_prov2/maths1/mprage003_brain_maths.nii.gz"^^xsd:anyURI .
+
+    <http://iri.nidash.org/9508e8294e6bdf133d2e3d4120420b03> a prov:Entity ;
+        rdfs:label "DYLD_LIBRARY_PATH"^^xsd:string ;
+        nipype:environmentVariable "DYLD_LIBRARY_PATH"^^xsd:string ;
+        prov:value "/usr/local/cuda/lib:"^^xsd:string .
+
+    niiri:c715ef2fc65d4542b485556d5563d542 a prov:Entity ;
+        rdfs:label "FSLDIR"^^xsd:string ;
+        nipype:environmentVariable "FSLDIR"^^xsd:string ;
+        prov:value "file://warpspeed.local/software/fsl/5.0.9/fsl"^^xsd:anyURI .
+
+    niiri:dc612dc65c679b0f7b4d670284aa1e38 a prov:Entity ;
+        rdfs:label "CAMINOPATH"^^xsd:string ;
+        nipype:environmentVariable "CAMINOPATH"^^xsd:string ;
+        prov:value "file://warpspeed.local/software/camino/bin"^^xsd:anyURI .
+
+    niiri:e5a45c892f8a88d577f69b9924fe61cd a prov:Entity ;
+        rdfs:label "FSF_OUTPUT_FORMAT"^^xsd:string ;
+        nipype:environmentVariable "FSF_OUTPUT_FORMAT"^^xsd:string ;
+        prov:value "nii.gz"^^xsd:string .
+
+    niiri:e633a4c11edc4eacbb7d286b784cd210 a prov:Entity ;
+        rdfs:label "FSLOUTPUTTYPE"^^xsd:string ;
+        nipype:environmentVariable "FSLOUTPUTTYPE"^^xsd:string ;
+        prov:value "NIFTI_GZ"^^xsd:string .
+
+    niiri:e9043b8eb1c79307c36a6043f93060a1 a prov:Entity ;
+        rdfs:label "MKL_NUM_THREADS"^^xsd:string ;
+        nipype:environmentVariable "MKL_NUM_THREADS"^^xsd:string ;
+        prov:value "4"^^xsd:string .
+
+    niiri:ec73b0bc66f90b90ebbb20609019da77 a prov:Entity ;
+        rdfs:label "CLASSPATH"^^xsd:string ;
+        nipype:environmentVariable "CLASSPATH"^^xsd:string ;
+        prov:value "/Users/satra/local/jar/MINE.jar:/Users/satra/local/jar/commons-io-2.3.jar"^^xsd:string .
+
+    niiri:f5eb8c89728d98b1a32358014a32b4e0 a prov:Entity ;
+        rdfs:label "FIX_VERTEX_AREA"^^xsd:string ;
+        nipype:environmentVariable "FIX_VERTEX_AREA"^^xsd:string ;
+        prov:value ""^^xsd:string .
+
+    <http://iri.nidash.org/4645f42696b3ea98ab0d6197a15c7dc8> a prov:Entity ;
+        prov:value "-mul 2"^^xsd:string .
+
+    <http://iri.nidash.org/4dbeb62cc96d5952d4c2e4ca01c3497e> a prov:Entity ;
+        prov:value "stream"^^xsd:string .
+
+    <http://iri.nidash.org/51acba0392b8e39e8fe31885c680431a> a prov:Entity ;
+        prov:value "NIFTI_GZ"^^xsd:string .
+
+    <http://iri.nidash.org/9ec227a6f740d9ba54614c67f6f65e89> a prov:Entity ;
+        prov:value 0 .
+
+    niiri:af374650694ce9f49a897abcc556901d a prov:Entity ;
+        prov:value "{\"FSLOUTPUTTYPE\": \"NIFTI_GZ\"}"^^xsd:string .
+
+    niiri:eef241389b7f626a950e3a5b6842d12e a prov:Entity ;
+        ns2:sha512 "5113a909219308c750c7fa1decab4f07abe97abe00595442a57c0114cd81d7f5715f2538bdc9e021e67db5250612ad925304d2d590585c4661c7469f607ca374"^^xsd:string ;
+        prov:atLocation "file://warpspeed.local/software/temp/share_blake/test_prov2/better/mprage003_brain.nii.gz"^^xsd:anyURI ;
+        prov:value "file://warpspeed.local/software/temp/share_blake/test_prov2/better/mprage003_brain.nii.gz"^^xsd:anyURI .
+
+    <http://iri.nidash.org/68ab4b1108d011e68f4c985aeb8aa27e> a nipype:NipypeInterfacesFslUtilsImagemaths,
+            prov:Activity ;
+        rdfs:label "ImageMaths"^^xsd:string ;
+        nipype:command "fslmaths /software/temp/share_blake/test_prov2/better/mprage003_brain.nii.gz -mul 2 /software/temp/share_blake/test_prov2/maths1/mprage003_brain_maths.nii.gz"^^xsd:string ;
+        nipype:commandPath "file://warpspeed.local/software/fsl/5.0.9/fsl/bin/fslmaths"^^xsd:anyURI ;
+        nipype:dependencies """/software/fsl/5.0.9/fsl/bin/fslmaths:
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 125.2.11)
+	/usr/lib/libstdc++.6.dylib (compatibility version 7.0.0, current version 7.9.0)"""^^xsd:string ;
+        nipype:duration "5.2866"^^xsd:float ;
+        nipype:interface "ImageMaths"^^xsd:string ;
+        nipype:module "nipype.interfaces.fsl.utils"^^xsd:string ;
+        nipype:platform "Darwin-15.4.0-x86_64-i386-64bit"^^xsd:string ;
+        nipype:returnCode 0 ;
+        nipype:version "5.0.9"^^xsd:string ;
+        nipype:workingDirectory "file://warpspeed.local/software/temp/share_blake/test_prov2/maths1"^^xsd:anyURI ;
+        prov:endTime "2016-04-22T21:23:08.363012"^^xsd:dateTime ;
+        prov:qualifiedAssociation [ a prov:Association ;
+                prov:hadRole nipype:LoggedInUser ] ;
+        prov:qualifiedUsage [ a prov:Usage ;
+                rdfs:label "ignore_exception"^^xsd:string ;
+                nipype:inPort "ignore_exception"^^xsd:string ;
+                prov:entity <http://iri.nidash.org/9ec227a6f740d9ba54614c67f6f65e89> ],
+            [ a prov:Usage ;
+                rdfs:label "in_file"^^xsd:string ;
+                nipype:inPort "in_file"^^xsd:string ;
+                prov:entity niiri:eef241389b7f626a950e3a5b6842d12e ],
+            [ a prov:Usage ;
+                rdfs:label "output_type"^^xsd:string ;
+                nipype:inPort "output_type"^^xsd:string ;
+                prov:entity <http://iri.nidash.org/51acba0392b8e39e8fe31885c680431a> ],
+            [ a prov:Usage ;
+                rdfs:label "op_string"^^xsd:string ;
+                nipype:inPort "op_string"^^xsd:string ;
+                prov:entity <http://iri.nidash.org/4645f42696b3ea98ab0d6197a15c7dc8> ],
+            [ a prov:Usage ;
+                rdfs:label "environ"^^xsd:string ;
+                nipype:inPort "environ"^^xsd:string ;
+                prov:entity niiri:af374650694ce9f49a897abcc556901d ],
+            [ a prov:Usage ;
+                rdfs:label "terminal_output"^^xsd:string ;
+                nipype:inPort "terminal_output"^^xsd:string ;
+                prov:entity <http://iri.nidash.org/4dbeb62cc96d5952d4c2e4ca01c3497e> ] ;
+        prov:startTime "2016-04-22T21:23:06.034352"^^xsd:dateTime ;
+        prov:used <http://iri.nidash.org/68ab5f2608d011e6a955985aeb8aa27e> ;
+        prov:wasAssociatedWith <http://iri.nidash.org/0312ee5fba61208f0d2f8e48604910b8>,
+            <http://iri.nidash.org/3cf3d1829fc4723c2ec1242d70180cf1> ;
+        foaf:host "warpspeed.local"^^xsd:anyURI .
+}
+
+_:N34c54a152b694b7dbf2a4891715794a7 {
+    ns1:a5fdf9108d011e69085985aeb8aa27e a prov:Bundle,
+            prov:Entity ;
+        prov:wasGeneratedBy ns1:a5fdade08d011e69021985aeb8aa27e .
+
+    ns1:a61cdc708d011e6a28a985aeb8aa27e a prov:Bundle,
+            prov:Entity ;
+        prov:wasGeneratedBy ns1:a61c95408d011e6bac1985aeb8aa27e .
+
+    ns1:a63a72308d011e6bce8985aeb8aa27e a prov:Bundle,
+            prov:Entity ;
+        prov:wasGeneratedBy ns1:a63a37808d011e69bd6985aeb8aa27e .
+
+    ns1:a6880fa08d011e69cd0985aeb8aa27e a prov:Bundle,
+            prov:Entity ;
+        prov:wasGeneratedBy ns1:a687c8f08d011e69f09985aeb8aa27e .
+
+    ns1:a63a37808d011e69bd6985aeb8aa27e a nipype:BinaryMaths,
+            nipype:Node,
+            prov:Activity ;
+        rdfs:label "BinaryMaths_maths2"^^xsd:string ;
+        nipype:hashval "219e162180e53c2b7a99b862383718b2"^^xsd:string ;
+        prov:qualifiedStart [ a prov:Start ;
+                prov:starter ns1:a5fdade08d011e69021985aeb8aa27e ],
+            [ a prov:Start ;
+                prov:starter ns1:a61c95408d011e6bac1985aeb8aa27e ] .
+
+    ns1:a5fdade08d011e69021985aeb8aa27e a nipype:ImageStats,
+            nipype:Node,
+            prov:Activity ;
+        rdfs:label "ImageStats_stats"^^xsd:string ;
+        nipype:hashval "0ec89826d742c4d3487a0997cbf35235"^^xsd:string ;
+        prov:qualifiedStart [ a prov:Start ;
+                prov:starter ns1:a687c8f08d011e69f09985aeb8aa27e ] .
+
+    ns1:a61c95408d011e6bac1985aeb8aa27e a nipype:ImageMaths,
+            nipype:Node,
+            prov:Activity ;
+        rdfs:label "ImageMaths_maths1"^^xsd:string ;
+        nipype:hashval "780e8e5535b59dda0eb031c72c886ee0"^^xsd:string ;
+        prov:qualifiedStart [ a prov:Start ;
+                prov:starter ns1:a687c8f08d011e69f09985aeb8aa27e ] .
+
+    ns1:a687c8f08d011e69f09985aeb8aa27e a nipype:BET,
+            nipype:Node,
+            prov:Activity ;
+        rdfs:label "BET_better"^^xsd:string ;
+        nipype:hashval "e7a869a96ab029ba5cd14ddb36fe497b"^^xsd:string .
+}
+
+ns1:a63a72308d011e6bce8985aeb8aa27e {
+    ns1:a4a802808d011e6b278985aeb8aa27e a nipype:Inputs,
+            prov:Collection,
+            prov:Entity ;
+        rdfs:label "Inputs"^^xsd:string ;
+        prov:hadMember <http://iri.nidash.org/4dbeb62cc96d5952d4c2e4ca01c3497e>,
+            <http://iri.nidash.org/51acba0392b8e39e8fe31885c680431a>,
+            <http://iri.nidash.org/7cf17ce9870ed0c011594e372052d142>,
+            <http://iri.nidash.org/9ec227a6f740d9ba54614c67f6f65e89>,
+            niiri:af374650694ce9f49a897abcc556901d,
+            niiri:c05bc0be7acd55c46adf6c370250be46,
+            niiri:f94121f8dd8e2fa86be91f0d5d37b2a4 .
+
+    ns1:a4b618c08d011e6bb22985aeb8aa27e a nipype:Outputs,
+            prov:Collection,
+            prov:Entity ;
+        rdfs:label "Outputs"^^xsd:string ;
+        prov:hadMember <http://iri.nidash.org/49b31546fd2f12007dfef7964e252bd0> ;
+        prov:wasGeneratedBy ns1:a499d2108d011e69eff985aeb8aa27e .
+
+    ns1:a4c1e7d08d011e698d2985aeb8aa27e a nipype:Runtime,
+            prov:Collection,
+            prov:Entity ;
+        rdfs:label "RuntimeInfo"^^xsd:string ;
+        prov:wasGeneratedBy ns1:a499d2108d011e69eff985aeb8aa27e .
+
+    <http://iri.nidash.org/0312ee5fba61208f0d2f8e48604910b8> a prov:Agent,
+            prov:SoftwareAgent ;
+        rdfs:label "Nipype"^^xsd:string ;
+        nipype:commit_hash "9121042"^^xsd:string ;
+        nipype:commit_source "repository"^^xsd:string ;
+        nipype:networkx_version "1.10"^^xsd:string ;
+        nipype:nibabel_version "2.1.0dev"^^xsd:string ;
+        nipype:numpy_version "1.10.2"^^xsd:string ;
+        nipype:pkg_path "file://warpspeed.local/software/nipy-repo/nipype/nipype"^^xsd:anyURI ;
+        nipype:scipy_version "0.16.1"^^xsd:string ;
+        nipype:sys_executable "file://warpspeed.local/software/anaconda/envs/devpype/bin/python"^^xsd:anyURI ;
+        nipype:sys_platform "darwin"^^xsd:string ;
+        nipype:sys_version """2.7.11 |Continuum Analytics, Inc.| (default, Dec  6 2015, 18:57:58) 
+[GCC 4.2.1 (Apple Inc. build 5577)]"""^^xsd:string ;
+        nipype:traits_version "4.5.0"^^xsd:string ;
+        nipype:version "0.12.0-rc1"^^xsd:string ;
+        foaf:name "Nipype"^^xsd:string .
+
+    <http://iri.nidash.org/2031064d0b0f55f84f94b9908a2120a1> a prov:Entity ;
+        rdfs:label "FREESURFER_HOME"^^xsd:string ;
+        nipype:environmentVariable "FREESURFER_HOME"^^xsd:string ;
+        prov:value "file://warpspeed.local/Applications/freesurfer"^^xsd:anyURI .
+
+    <http://iri.nidash.org/27049d020570766684c9da05f63a7a05> a prov:Entity ;
+        rdfs:label "OMP_NUM_THREADS"^^xsd:string ;
+        nipype:environmentVariable "OMP_NUM_THREADS"^^xsd:string ;
+        prov:value "4"^^xsd:string .
+
+    <http://iri.nidash.org/33b6d5c8661fae8105af219cb532d248> a prov:Entity ;
+        rdfs:label "ANTSPATH"^^xsd:string ;
+        nipype:environmentVariable "ANTSPATH"^^xsd:string ;
+        prov:value "file://warpspeed.local/software/ANTSbin/140117/"^^xsd:anyURI .
+
+    <http://iri.nidash.org/3cf3d1829fc4723c2ec1242d70180cf1> a prov:Agent,
+            prov:Person ;
+        rdfs:label "satra"^^xsd:string ;
+        foaf:name "satra"^^xsd:string .
+
+    <http://iri.nidash.org/3f1b0f3672391153b26450f7bccbd51c> a prov:Entity ;
+        rdfs:label "PATH"^^xsd:string ;
+        nipype:environmentVariable "PATH"^^xsd:string ;
+        prov:value "/software/anaconda/envs/devpype/bin:/usr/local/var/rbenv/shims:/software/fsl/5.0.9/fsl/bin:/usr/local/cuda/bin:/software/ANTSbin/140117/:/software/camino/bin:/Users/satra/local/bin:/software/AFNI/:/Applications/freesurfer/bin:/Applications/freesurfer/fsfast/bin:/Applications/freesurfer/tktools:/Applications/freesurfer/bin/freeview.app/Contents/MacOS/:/Applications/freesurfer/mni/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/deployd/bin:/usr/local/git/bin:/usr/local/go/bin:/usr/local/MacGPG2/bin:/Library/TeX/texbin:/Applications/Muse"^^xsd:string .
+
+    <http://iri.nidash.org/49b31546fd2f12007dfef7964e252bd0> a prov:Entity ;
+        ns2:sha512 "655adeff9f819b796a6aed855b926bb9c0dde62011692c9b2300709e5cf5c141e63ccfa45f2c7078942c29ad2c96986bd9dbfd3f49ecc41942b5cf34bf4a1ea8"^^xsd:string ;
+        prov:atLocation "file://warpspeed.local/software/temp/share_blake/test_prov2/maths2/mprage003_brain_maths_maths.nii.gz"^^xsd:anyURI ;
+        prov:qualifiedGeneration [ a prov:Generation ;
+                rdfs:label "out_file"^^xsd:string ;
+                nipype:outPort "out_file"^^xsd:string ;
+                prov:activity ns1:a499d2108d011e69eff985aeb8aa27e ] ;
+        prov:value "file://warpspeed.local/software/temp/share_blake/test_prov2/maths2/mprage003_brain_maths_maths.nii.gz"^^xsd:anyURI .
+
+    <http://iri.nidash.org/5e668e002569596c6bf6a0816425a171> a prov:Entity ;
+        rdfs:label "LOGNAME"^^xsd:string ;
+        nipype:environmentVariable "LOGNAME"^^xsd:string ;
+        prov:value "satra"^^xsd:string .
+
+    ns1:a49b36e08d011e69ca0985aeb8aa27e a nipype:Environment,
+            prov:Collection,
+            prov:Entity ;
+        rdfs:label "Environment"^^xsd:string ;
+        prov:hadMember <http://iri.nidash.org/2031064d0b0f55f84f94b9908a2120a1>,
+            <http://iri.nidash.org/27049d020570766684c9da05f63a7a05>,
+            <http://iri.nidash.org/33b6d5c8661fae8105af219cb532d248>,
+            <http://iri.nidash.org/3f1b0f3672391153b26450f7bccbd51c>,
+            <http://iri.nidash.org/5e668e002569596c6bf6a0816425a171>,
+            <http://iri.nidash.org/711a35fa07d8b584aa1a559ce0b3d45d>,
+            <http://iri.nidash.org/9508e8294e6bdf133d2e3d4120420b03>,
+            niiri:c715ef2fc65d4542b485556d5563d542,
+            niiri:dc612dc65c679b0f7b4d670284aa1e38,
+            niiri:e5a45c892f8a88d577f69b9924fe61cd,
+            niiri:e633a4c11edc4eacbb7d286b784cd210,
+            niiri:e9043b8eb1c79307c36a6043f93060a1,
+            niiri:ec73b0bc66f90b90ebbb20609019da77,
+            niiri:f5eb8c89728d98b1a32358014a32b4e0 .
+
+    <http://iri.nidash.org/711a35fa07d8b584aa1a559ce0b3d45d> a prov:Entity ;
+        rdfs:label "USER"^^xsd:string ;
+        nipype:environmentVariable "USER"^^xsd:string ;
+        prov:value "satra"^^xsd:string .
+
+    <http://iri.nidash.org/9508e8294e6bdf133d2e3d4120420b03> a prov:Entity ;
+        rdfs:label "DYLD_LIBRARY_PATH"^^xsd:string ;
+        nipype:environmentVariable "DYLD_LIBRARY_PATH"^^xsd:string ;
+        prov:value "/usr/local/cuda/lib:"^^xsd:string .
+
+    niiri:c715ef2fc65d4542b485556d5563d542 a prov:Entity ;
+        rdfs:label "FSLDIR"^^xsd:string ;
+        nipype:environmentVariable "FSLDIR"^^xsd:string ;
+        prov:value "file://warpspeed.local/software/fsl/5.0.9/fsl"^^xsd:anyURI .
+
+    niiri:dc612dc65c679b0f7b4d670284aa1e38 a prov:Entity ;
+        rdfs:label "CAMINOPATH"^^xsd:string ;
+        nipype:environmentVariable "CAMINOPATH"^^xsd:string ;
+        prov:value "file://warpspeed.local/software/camino/bin"^^xsd:anyURI .
+
+    niiri:e5a45c892f8a88d577f69b9924fe61cd a prov:Entity ;
+        rdfs:label "FSF_OUTPUT_FORMAT"^^xsd:string ;
+        nipype:environmentVariable "FSF_OUTPUT_FORMAT"^^xsd:string ;
+        prov:value "nii.gz"^^xsd:string .
+
+    niiri:e633a4c11edc4eacbb7d286b784cd210 a prov:Entity ;
+        rdfs:label "FSLOUTPUTTYPE"^^xsd:string ;
+        nipype:environmentVariable "FSLOUTPUTTYPE"^^xsd:string ;
+        prov:value "NIFTI_GZ"^^xsd:string .
+
+    niiri:e9043b8eb1c79307c36a6043f93060a1 a prov:Entity ;
+        rdfs:label "MKL_NUM_THREADS"^^xsd:string ;
+        nipype:environmentVariable "MKL_NUM_THREADS"^^xsd:string ;
+        prov:value "4"^^xsd:string .
+
+    niiri:ec73b0bc66f90b90ebbb20609019da77 a prov:Entity ;
+        rdfs:label "CLASSPATH"^^xsd:string ;
+        nipype:environmentVariable "CLASSPATH"^^xsd:string ;
+        prov:value "/Users/satra/local/jar/MINE.jar:/Users/satra/local/jar/commons-io-2.3.jar"^^xsd:string .
+
+    niiri:f5eb8c89728d98b1a32358014a32b4e0 a prov:Entity ;
+        rdfs:label "FIX_VERTEX_AREA"^^xsd:string ;
+        nipype:environmentVariable "FIX_VERTEX_AREA"^^xsd:string ;
+        prov:value ""^^xsd:string .
+
+    <http://iri.nidash.org/4dbeb62cc96d5952d4c2e4ca01c3497e> a prov:Entity ;
+        prov:value "stream"^^xsd:string .
+
+    <http://iri.nidash.org/51acba0392b8e39e8fe31885c680431a> a prov:Entity ;
+        prov:value "NIFTI_GZ"^^xsd:string .
+
+    <http://iri.nidash.org/7cf17ce9870ed0c011594e372052d142> a prov:Entity ;
+        ns2:sha512 "bee2987a89e0cfbc193261e563ca8f7f4066f04ed3053d44a0f2f8a53a527164238a1d3a3b786573ea13287052d2d275696af1e518c4b8b8af42d7100a5b9162"^^xsd:string ;
+        prov:atLocation "file://warpspeed.local/software/temp/share_blake/test_prov2/maths1/mprage003_brain_maths.nii.gz"^^xsd:anyURI ;
+        prov:value "file://warpspeed.local/software/temp/share_blake/test_prov2/maths1/mprage003_brain_maths.nii.gz"^^xsd:anyURI .
+
+    <http://iri.nidash.org/9ec227a6f740d9ba54614c67f6f65e89> a prov:Entity ;
+        prov:value 0 .
+
+    niiri:af374650694ce9f49a897abcc556901d a prov:Entity ;
+        prov:value "{\"FSLOUTPUTTYPE\": \"NIFTI_GZ\"}"^^xsd:string .
+
+    niiri:c05bc0be7acd55c46adf6c370250be46 a prov:Entity ;
+        prov:value "119.441736"^^xsd:float .
+
+    niiri:f94121f8dd8e2fa86be91f0d5d37b2a4 a prov:Entity ;
+        prov:value "div"^^xsd:string .
+
+    ns1:a499d2108d011e69eff985aeb8aa27e a nipype:NipypeInterfacesFslMathsBinarymaths,
+            prov:Activity ;
+        rdfs:label "BinaryMaths"^^xsd:string ;
+        nipype:command "fslmaths /software/temp/share_blake/test_prov2/maths1/mprage003_brain_maths.nii.gz -div 119.44173600 /software/temp/share_blake/test_prov2/maths2/mprage003_brain_maths_maths.nii.gz"^^xsd:string ;
+        nipype:commandPath "file://warpspeed.local/software/fsl/5.0.9/fsl/bin/fslmaths"^^xsd:anyURI ;
+        nipype:dependencies """/software/fsl/5.0.9/fsl/bin/fslmaths:
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 125.2.11)
+	/usr/lib/libstdc++.6.dylib (compatibility version 7.0.0, current version 7.9.0)"""^^xsd:string ;
+        nipype:duration "9.6518"^^xsd:float ;
+        nipype:interface "BinaryMaths"^^xsd:string ;
+        nipype:module "nipype.interfaces.fsl.maths"^^xsd:string ;
+        nipype:platform "Darwin-15.4.0-x86_64-i386-64bit"^^xsd:string ;
+        nipype:returnCode 0 ;
+        nipype:version "5.0.9"^^xsd:string ;
+        nipype:workingDirectory "file://warpspeed.local/software/temp/share_blake/test_prov2/maths2"^^xsd:anyURI ;
+        prov:endTime "2016-04-22T21:23:11.077645"^^xsd:dateTime ;
+        prov:qualifiedAssociation [ a prov:Association ;
+                prov:hadRole nipype:LoggedInUser ] ;
+        prov:qualifiedUsage [ a prov:Usage ;
+                rdfs:label "in_file"^^xsd:string ;
+                nipype:inPort "in_file"^^xsd:string ;
+                prov:entity <http://iri.nidash.org/7cf17ce9870ed0c011594e372052d142> ],
+            [ a prov:Usage ;
+                rdfs:label "operand_value"^^xsd:string ;
+                nipype:inPort "operand_value"^^xsd:string ;
+                prov:entity niiri:c05bc0be7acd55c46adf6c370250be46 ],
+            [ a prov:Usage ;
+                rdfs:label "operation"^^xsd:string ;
+                nipype:inPort "operation"^^xsd:string ;
+                prov:entity niiri:f94121f8dd8e2fa86be91f0d5d37b2a4 ],
+            [ a prov:Usage ;
+                rdfs:label "environ"^^xsd:string ;
+                nipype:inPort "environ"^^xsd:string ;
+                prov:entity niiri:af374650694ce9f49a897abcc556901d ],
+            [ a prov:Usage ;
+                rdfs:label "ignore_exception"^^xsd:string ;
+                nipype:inPort "ignore_exception"^^xsd:string ;
+                prov:entity <http://iri.nidash.org/9ec227a6f740d9ba54614c67f6f65e89> ],
+            [ a prov:Usage ;
+                rdfs:label "terminal_output"^^xsd:string ;
+                nipype:inPort "terminal_output"^^xsd:string ;
+                prov:entity <http://iri.nidash.org/4dbeb62cc96d5952d4c2e4ca01c3497e> ],
+            [ a prov:Usage ;
+                rdfs:label "output_type"^^xsd:string ;
+                nipype:inPort "output_type"^^xsd:string ;
+                prov:entity <http://iri.nidash.org/51acba0392b8e39e8fe31885c680431a> ] ;
+        prov:startTime "2016-04-22T21:23:09.212465"^^xsd:dateTime ;
+        prov:used ns1:a49b36e08d011e69ca0985aeb8aa27e ;
+        prov:wasAssociatedWith <http://iri.nidash.org/0312ee5fba61208f0d2f8e48604910b8>,
+            <http://iri.nidash.org/3cf3d1829fc4723c2ec1242d70180cf1> ;
+        foaf:host "warpspeed.local"^^xsd:anyURI .
+}
+
+ns1:a5fdf9108d011e69085985aeb8aa27e {
+    <http://iri.nidash.org/690c5b0008d011e681b9985aeb8aa27e> a nipype:Inputs,
+            prov:Collection,
+            prov:Entity ;
+        rdfs:label "Inputs"^^xsd:string ;
+        prov:hadMember <http://iri.nidash.org/3e8aea0643ee982b229cc54dcdecb3a5>,
+            <http://iri.nidash.org/4dbeb62cc96d5952d4c2e4ca01c3497e>,
+            <http://iri.nidash.org/51acba0392b8e39e8fe31885c680431a>,
+            <http://iri.nidash.org/9ec227a6f740d9ba54614c67f6f65e89>,
+            niiri:af374650694ce9f49a897abcc556901d,
+            niiri:eef241389b7f626a950e3a5b6842d12e .
+
+    <http://iri.nidash.org/690d46dc08d011e68f56985aeb8aa27e> a nipype:Outputs,
+            prov:Collection,
+            prov:Entity ;
+        rdfs:label "Outputs"^^xsd:string ;
+        prov:hadMember niiri:c05bc0be7acd55c46adf6c370250be46 ;
+        prov:wasGeneratedBy <http://iri.nidash.org/690b70e308d011e68f03985aeb8aa27e> .
+
+    <http://iri.nidash.org/690d51e808d011e690d6985aeb8aa27e> a nipype:Runtime,
+            prov:Collection,
+            prov:Entity ;
+        rdfs:label "RuntimeInfo"^^xsd:string ;
+        prov:hadMember <http://iri.nidash.org/690d58de08d011e6ac7d985aeb8aa27e>,
+            <http://iri.nidash.org/690d5d1708d011e6a426985aeb8aa27e> ;
+        prov:wasGeneratedBy <http://iri.nidash.org/690b70e308d011e68f03985aeb8aa27e> .
+
+    <http://iri.nidash.org/690d599108d011e69384985aeb8aa27e> a prov:Entity ;
+        rdfs:label "merged"^^xsd:string ;
+        nipype:merged "[\"stdout 2016-04-22T17:23:08.980142:119.441736 \"]"^^xsd:string .
+
+    <http://iri.nidash.org/690d5dae08d011e686ad985aeb8aa27e> a prov:Entity ;
+        rdfs:label "stdout"^^xsd:string ;
+        nipype:stdout "119.441736 "^^xsd:string .
+
+    <http://iri.nidash.org/0312ee5fba61208f0d2f8e48604910b8> a prov:Agent,
+            prov:SoftwareAgent ;
+        rdfs:label "Nipype"^^xsd:string ;
+        nipype:commit_hash "9121042"^^xsd:string ;
+        nipype:commit_source "repository"^^xsd:string ;
+        nipype:networkx_version "1.10"^^xsd:string ;
+        nipype:nibabel_version "2.1.0dev"^^xsd:string ;
+        nipype:numpy_version "1.10.2"^^xsd:string ;
+        nipype:pkg_path "file://warpspeed.local/software/nipy-repo/nipype/nipype"^^xsd:anyURI ;
+        nipype:scipy_version "0.16.1"^^xsd:string ;
+        nipype:sys_executable "file://warpspeed.local/software/anaconda/envs/devpype/bin/python"^^xsd:anyURI ;
+        nipype:sys_platform "darwin"^^xsd:string ;
+        nipype:sys_version """2.7.11 |Continuum Analytics, Inc.| (default, Dec  6 2015, 18:57:58) 
+[GCC 4.2.1 (Apple Inc. build 5577)]"""^^xsd:string ;
+        nipype:traits_version "4.5.0"^^xsd:string ;
+        nipype:version "0.12.0-rc1"^^xsd:string ;
+        foaf:name "Nipype"^^xsd:string .
+
+    <http://iri.nidash.org/2031064d0b0f55f84f94b9908a2120a1> a prov:Entity ;
+        rdfs:label "FREESURFER_HOME"^^xsd:string ;
+        nipype:environmentVariable "FREESURFER_HOME"^^xsd:string ;
+        prov:value "file://warpspeed.local/Applications/freesurfer"^^xsd:anyURI .
+
+    <http://iri.nidash.org/27049d020570766684c9da05f63a7a05> a prov:Entity ;
+        rdfs:label "OMP_NUM_THREADS"^^xsd:string ;
+        nipype:environmentVariable "OMP_NUM_THREADS"^^xsd:string ;
+        prov:value "4"^^xsd:string .
+
+    <http://iri.nidash.org/33b6d5c8661fae8105af219cb532d248> a prov:Entity ;
+        rdfs:label "ANTSPATH"^^xsd:string ;
+        nipype:environmentVariable "ANTSPATH"^^xsd:string ;
+        prov:value "file://warpspeed.local/software/ANTSbin/140117/"^^xsd:anyURI .
+
+    <http://iri.nidash.org/3cf3d1829fc4723c2ec1242d70180cf1> a prov:Agent,
+            prov:Person ;
+        rdfs:label "satra"^^xsd:string ;
+        foaf:name "satra"^^xsd:string .
+
+    <http://iri.nidash.org/3f1b0f3672391153b26450f7bccbd51c> a prov:Entity ;
+        rdfs:label "PATH"^^xsd:string ;
+        nipype:environmentVariable "PATH"^^xsd:string ;
+        prov:value "/software/anaconda/envs/devpype/bin:/usr/local/var/rbenv/shims:/software/fsl/5.0.9/fsl/bin:/usr/local/cuda/bin:/software/ANTSbin/140117/:/software/camino/bin:/Users/satra/local/bin:/software/AFNI/:/Applications/freesurfer/bin:/Applications/freesurfer/fsfast/bin:/Applications/freesurfer/tktools:/Applications/freesurfer/bin/freeview.app/Contents/MacOS/:/Applications/freesurfer/mni/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/deployd/bin:/usr/local/git/bin:/usr/local/go/bin:/usr/local/MacGPG2/bin:/Library/TeX/texbin:/Applications/Muse"^^xsd:string .
+
+    <http://iri.nidash.org/5e668e002569596c6bf6a0816425a171> a prov:Entity ;
+        rdfs:label "LOGNAME"^^xsd:string ;
+        nipype:environmentVariable "LOGNAME"^^xsd:string ;
+        prov:value "satra"^^xsd:string .
+
+    <http://iri.nidash.org/690b884c08d011e6ba5e985aeb8aa27e> a nipype:Environment,
+            prov:Collection,
+            prov:Entity ;
+        rdfs:label "Environment"^^xsd:string ;
+        prov:hadMember <http://iri.nidash.org/2031064d0b0f55f84f94b9908a2120a1>,
+            <http://iri.nidash.org/27049d020570766684c9da05f63a7a05>,
+            <http://iri.nidash.org/33b6d5c8661fae8105af219cb532d248>,
+            <http://iri.nidash.org/3f1b0f3672391153b26450f7bccbd51c>,
+            <http://iri.nidash.org/5e668e002569596c6bf6a0816425a171>,
+            <http://iri.nidash.org/711a35fa07d8b584aa1a559ce0b3d45d>,
+            <http://iri.nidash.org/9508e8294e6bdf133d2e3d4120420b03>,
+            niiri:c715ef2fc65d4542b485556d5563d542,
+            niiri:dc612dc65c679b0f7b4d670284aa1e38,
+            niiri:e5a45c892f8a88d577f69b9924fe61cd,
+            niiri:e633a4c11edc4eacbb7d286b784cd210,
+            niiri:e9043b8eb1c79307c36a6043f93060a1,
+            niiri:ec73b0bc66f90b90ebbb20609019da77,
+            niiri:f5eb8c89728d98b1a32358014a32b4e0 .
+
+    <http://iri.nidash.org/711a35fa07d8b584aa1a559ce0b3d45d> a prov:Entity ;
+        rdfs:label "USER"^^xsd:string ;
+        nipype:environmentVariable "USER"^^xsd:string ;
+        prov:value "satra"^^xsd:string .
+
+    <http://iri.nidash.org/9508e8294e6bdf133d2e3d4120420b03> a prov:Entity ;
+        rdfs:label "DYLD_LIBRARY_PATH"^^xsd:string ;
+        nipype:environmentVariable "DYLD_LIBRARY_PATH"^^xsd:string ;
+        prov:value "/usr/local/cuda/lib:"^^xsd:string .
+
+    niiri:c05bc0be7acd55c46adf6c370250be46 a prov:Entity ;
+        prov:qualifiedGeneration [ a prov:Generation ;
+                rdfs:label "out_stat"^^xsd:string ;
+                nipype:outPort "out_stat"^^xsd:string ;
+                prov:activity <http://iri.nidash.org/690b70e308d011e68f03985aeb8aa27e> ] ;
+        prov:value "119.441736"^^xsd:float .
+
+    niiri:c715ef2fc65d4542b485556d5563d542 a prov:Entity ;
+        rdfs:label "FSLDIR"^^xsd:string ;
+        nipype:environmentVariable "FSLDIR"^^xsd:string ;
+        prov:value "file://warpspeed.local/software/fsl/5.0.9/fsl"^^xsd:anyURI .
+
+    niiri:dc612dc65c679b0f7b4d670284aa1e38 a prov:Entity ;
+        rdfs:label "CAMINOPATH"^^xsd:string ;
+        nipype:environmentVariable "CAMINOPATH"^^xsd:string ;
+        prov:value "file://warpspeed.local/software/camino/bin"^^xsd:anyURI .
+
+    niiri:e5a45c892f8a88d577f69b9924fe61cd a prov:Entity ;
+        rdfs:label "FSF_OUTPUT_FORMAT"^^xsd:string ;
+        nipype:environmentVariable "FSF_OUTPUT_FORMAT"^^xsd:string ;
+        prov:value "nii.gz"^^xsd:string .
+
+    niiri:e633a4c11edc4eacbb7d286b784cd210 a prov:Entity ;
+        rdfs:label "FSLOUTPUTTYPE"^^xsd:string ;
+        nipype:environmentVariable "FSLOUTPUTTYPE"^^xsd:string ;
+        prov:value "NIFTI_GZ"^^xsd:string .
+
+    niiri:e9043b8eb1c79307c36a6043f93060a1 a prov:Entity ;
+        rdfs:label "MKL_NUM_THREADS"^^xsd:string ;
+        nipype:environmentVariable "MKL_NUM_THREADS"^^xsd:string ;
+        prov:value "4"^^xsd:string .
+
+    niiri:ec73b0bc66f90b90ebbb20609019da77 a prov:Entity ;
+        rdfs:label "CLASSPATH"^^xsd:string ;
+        nipype:environmentVariable "CLASSPATH"^^xsd:string ;
+        prov:value "/Users/satra/local/jar/MINE.jar:/Users/satra/local/jar/commons-io-2.3.jar"^^xsd:string .
+
+    niiri:f5eb8c89728d98b1a32358014a32b4e0 a prov:Entity ;
+        rdfs:label "FIX_VERTEX_AREA"^^xsd:string ;
+        nipype:environmentVariable "FIX_VERTEX_AREA"^^xsd:string ;
+        prov:value ""^^xsd:string .
+
+    <http://iri.nidash.org/3e8aea0643ee982b229cc54dcdecb3a5> a prov:Entity ;
+        prov:value "-M"^^xsd:string .
+
+    <http://iri.nidash.org/4dbeb62cc96d5952d4c2e4ca01c3497e> a prov:Entity ;
+        prov:value "stream"^^xsd:string .
+
+    <http://iri.nidash.org/51acba0392b8e39e8fe31885c680431a> a prov:Entity ;
+        prov:value "NIFTI_GZ"^^xsd:string .
+
+    <http://iri.nidash.org/9ec227a6f740d9ba54614c67f6f65e89> a prov:Entity ;
+        prov:value 0 .
+
+    niiri:af374650694ce9f49a897abcc556901d a prov:Entity ;
+        prov:value "{\"FSLOUTPUTTYPE\": \"NIFTI_GZ\"}"^^xsd:string .
+
+    niiri:eef241389b7f626a950e3a5b6842d12e a prov:Entity ;
+        ns2:sha512 "5113a909219308c750c7fa1decab4f07abe97abe00595442a57c0114cd81d7f5715f2538bdc9e021e67db5250612ad925304d2d590585c4661c7469f607ca374"^^xsd:string ;
+        prov:atLocation "file://warpspeed.local/software/temp/share_blake/test_prov2/better/mprage003_brain.nii.gz"^^xsd:anyURI ;
+        prov:value "file://warpspeed.local/software/temp/share_blake/test_prov2/better/mprage003_brain.nii.gz"^^xsd:anyURI .
+
+    <http://iri.nidash.org/690b70e308d011e68f03985aeb8aa27e> a nipype:NipypeInterfacesFslUtilsImagestats,
+            prov:Activity ;
+        rdfs:label "ImageStats"^^xsd:string ;
+        nipype:command "fslstats /software/temp/share_blake/test_prov2/better/mprage003_brain.nii.gz -M"^^xsd:string ;
+        nipype:commandPath "file://warpspeed.local/software/fsl/5.0.9/fsl/bin/fslstats"^^xsd:anyURI ;
+        nipype:dependencies """/software/fsl/5.0.9/fsl/bin/fslstats:
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 125.2.11)
+	/usr/lib/libstdc++.6.dylib (compatibility version 7.0.0, current version 7.9.0)"""^^xsd:string ;
+        nipype:duration "4.46229"^^xsd:float ;
+        nipype:interface "ImageStats"^^xsd:string ;
+        nipype:module "nipype.interfaces.fsl.utils"^^xsd:string ;
+        nipype:platform "Darwin-15.4.0-x86_64-i386-64bit"^^xsd:string ;
+        nipype:returnCode 0 ;
+        nipype:version "5.0.9"^^xsd:string ;
+        nipype:workingDirectory "file://warpspeed.local/software/temp/share_blake/test_prov2/stats"^^xsd:anyURI ;
+        prov:endTime "2016-04-22T21:23:08.993171"^^xsd:dateTime ;
+        prov:qualifiedAssociation [ a prov:Association ;
+                prov:hadRole nipype:LoggedInUser ] ;
+        prov:qualifiedUsage [ a prov:Usage ;
+                rdfs:label "in_file"^^xsd:string ;
+                nipype:inPort "in_file"^^xsd:string ;
+                prov:entity niiri:eef241389b7f626a950e3a5b6842d12e ],
+            [ a prov:Usage ;
+                rdfs:label "op_string"^^xsd:string ;
+                nipype:inPort "op_string"^^xsd:string ;
+                prov:entity <http://iri.nidash.org/3e8aea0643ee982b229cc54dcdecb3a5> ],
+            [ a prov:Usage ;
+                rdfs:label "output_type"^^xsd:string ;
+                nipype:inPort "output_type"^^xsd:string ;
+                prov:entity <http://iri.nidash.org/51acba0392b8e39e8fe31885c680431a> ],
+            [ a prov:Usage ;
+                rdfs:label "environ"^^xsd:string ;
+                nipype:inPort "environ"^^xsd:string ;
+                prov:entity niiri:af374650694ce9f49a897abcc556901d ],
+            [ a prov:Usage ;
+                rdfs:label "ignore_exception"^^xsd:string ;
+                nipype:inPort "ignore_exception"^^xsd:string ;
+                prov:entity <http://iri.nidash.org/9ec227a6f740d9ba54614c67f6f65e89> ],
+            [ a prov:Usage ;
+                rdfs:label "terminal_output"^^xsd:string ;
+                nipype:inPort "terminal_output"^^xsd:string ;
+                prov:entity <http://iri.nidash.org/4dbeb62cc96d5952d4c2e4ca01c3497e> ] ;
+        prov:startTime "2016-04-22T21:23:08.546942"^^xsd:dateTime ;
+        prov:used <http://iri.nidash.org/690b884c08d011e6ba5e985aeb8aa27e> ;
+        prov:wasAssociatedWith <http://iri.nidash.org/0312ee5fba61208f0d2f8e48604910b8>,
+            <http://iri.nidash.org/3cf3d1829fc4723c2ec1242d70180cf1> ;
+        foaf:host "warpspeed.local"^^xsd:anyURI .
+}
+

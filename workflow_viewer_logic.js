@@ -1,6 +1,12 @@
 var workflow_viewer_graph = (function(graph_data) {
     
     /* 
+     * graph_data is the JSON object as specified
+     * in the README.
+     *
+     * topological table is a double-array of
+     * topologically sorted nodes in the graph,
+     * as described in the README.
      */
     var topological_table;
     
@@ -13,8 +19,8 @@ var workflow_viewer_graph = (function(graph_data) {
         topological_table = build_topological_table();
     };
     
-    initialize();
     return {
+        init: initialize,
         get_nodes_topological_sort: get_topological_table,
         get_parents: get_parents,
         get_children: get_children,
@@ -70,7 +76,7 @@ var workflow_viewer_graph = (function(graph_data) {
     function get_inputs(node) {
         //return a deep copy of the node's inputs array
         return $.extend(true, [], graph_data[node]["info_collections"]["inputs"]);
-    }
+    };
     
     /*
      * returns an object of all output objects 
@@ -79,7 +85,7 @@ var workflow_viewer_graph = (function(graph_data) {
     function get_outputs(node) {
         //return a deep copy of the node's outputs object
         return $.extend(true, {}, graph_data[node]["info_collections"]["outputs"]);
-    }
+    };
     
     /*
      * returns an array of node_ids that have 
@@ -88,7 +94,6 @@ var workflow_viewer_graph = (function(graph_data) {
      */
     function get_children_with_input(node, output_id) {
         var children = [];
-        
         $.each(graph_data[node]["children"], function(index, child) {
             var notAdded = true;
             $.each(graph_data[child]["info_collections"]["inputs"], function(index_2, input) {
@@ -98,19 +103,26 @@ var workflow_viewer_graph = (function(graph_data) {
                 }
             });
         });
-        
         return children;
-    }
+    };
     
     
     ////////////////////////////////
     //Private Methods
     ////////////////////////////////
     
+    /*
+     * returns a hash of string s,
+     * prepended with "workflow_viewer_"
+     */
     function hash(s){
         return "workflow_viewer_" + s.split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);              
     };
     
+    /*
+     * hash all the node, input, and output ids
+     * found in graph_data
+     */
     function hash_graph_ids() {
         $.each(graph_data, function(node_id, node_obj) {
             graph_data[hash(node_id)] = node_obj;
@@ -134,10 +146,9 @@ var workflow_viewer_graph = (function(graph_data) {
         });
     };
     
-    //TODO fix spec
-    /* Required: each node has parents array.
-     *           each node in parents is also a node in graph_data.
-     *
+    /* 
+     * add a children array to each node object in graph_data
+     * that contains all children ids of that node in the graph
      */
     function augment_graph_data() {
         //initialize children array for each node.
@@ -156,11 +167,11 @@ var workflow_viewer_graph = (function(graph_data) {
         });
     };
     
-    
-    //TODO fix spec
-    /* Required: graph is already set.
-     *
-     *Handles forests
+    /*
+     * build a double-array of topologically
+     * sorted nodes in the graph
+     * (as described in the README)
+     * and return it
      */
     function build_topological_table() {
         var level_map = {};
@@ -363,8 +374,8 @@ var workflow_viewer_display = (function(graph_data) {
 
 $(document).ready(function() {
     
+    workflow_viewer_graph.init();
     workflow_viewer_display.init();
-    
     
 });
 

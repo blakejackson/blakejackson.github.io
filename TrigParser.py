@@ -3,6 +3,7 @@ import rdflib as rl
 
 graph_data = {}
 g = rl.ConjunctiveGraph()
+#load the file 'example.trig' into the graph to be parsed
 g.parse('example.trig', format='trig')
 
 g2 = rl.ConjunctiveGraph()
@@ -122,6 +123,8 @@ for key in graph_data.keys():
 
 
 #add node_id field to input objects
+#NOTE: this is a hack and may lead to incorrect results,
+#      consider rewriting this into a query.
 for key in graph_data.keys():
     for node_id in graph_data[key]["parents"]:
         for output_id in graph_data[node_id]["info_collections"]["outputs"].keys():
@@ -130,6 +133,7 @@ for key in graph_data.keys():
                     input_obj["node_id"] = node_id
     
 
+#save the result to graph_data.js
 f = open("graph_data.js", "w")
 f.write("var graph_data = " + json.dumps(graph_data))
 f.close()
